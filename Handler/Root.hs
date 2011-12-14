@@ -41,3 +41,11 @@ data Prof = Prof
             , profMemo :: Maybe Textarea
             }
           deriving Show
+
+profAForm :: Maybe Prof -> AForm Tut Tut Prof
+profAForm mp = Prof
+            <$> areq (selectField sexs) "Sex" (profSex <$> mp)
+            <*> areq intField "Age" (profAge <$> mp)
+            <*> aopt textareaField "Memo" (profMemo <$> mp)
+  where
+    sexs = [(pack $ show s, s) | s <- [minBound::Sex .. maxBound]]
