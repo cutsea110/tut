@@ -25,8 +25,8 @@ getHomeR uid = do
     me <- get404 uid
     fs <- selectList [] [Asc UserIdent]
     return (me, fs)
-  let sexs = [minBound..maxBound]
-      sexIs s = s == userSex self
+  ((_, w), e) <- generateFormPost $ renderDivs $
+                 profAForm $ Just $ Prof (userSex self) (userAge self) (Just (Textarea (userMemo self)))
   defaultLayout $ do
     setTitle "user home"
     $(widgetFile "userhome")
