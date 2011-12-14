@@ -1,3 +1,5 @@
+{-# LANGUAGE TemplateHaskell, QuasiQuotes #-}
+{-# LANGUAGE OverloadedStrings #-}
 module Handler.Root where
 
 import Import

@@ -1,3 +1,6 @@
+{-# LANGUAGE TemplateHaskell, QuasiQuotes, TypeFamilies, MultiParamTypeClasses #-}
+{-# LANGUAGE CPP #-}
+{-# LANGUAGE OverloadedStrings #-}
 module Foundation
     ( Tut (..)
     , TutRoute (..)
