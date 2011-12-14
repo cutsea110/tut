@@ -3,7 +3,6 @@
 module Handler.Root where
 
 import Import
-import Data.Text as T
 
 -- This is a handler function for the GET request method on the RootR
 -- resource pattern. All of your resource patterns are defined in
@@ -19,9 +18,12 @@ getRootR = do
         setTitle "tut homepage"
         $(widgetFile "homepage")
 
-getHomeR :: Text -> Handler RepHtml
-getHomeR name = do
-  let friends = T.words "Kate Michael James"
+getHomeR :: UserId -> Handler RepHtml
+getHomeR uid = do
+  (self, friends) <- runDB $ do
+    me <- get404 uid
+    fs <- selectList [] [Asc UserIdent]
+    return (me, fs)
   defaultLayout $ do
     setTitle "user home"
     $(widgetFile "userhome")

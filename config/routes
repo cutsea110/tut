@@ -5,4 +5,4 @@
 /robots.txt RobotsR GET
 
 / RootR GET
-/home/#Text HomeR GET
+/home/#UserId HomeR GET

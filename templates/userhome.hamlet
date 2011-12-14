@@ -1,6 +1,7 @@
-<h1>Welcome to #{name}'s home page
-<h3>#{name}'s friends
+<h1>Welcome to #{userIdent self}'s home page
+<h3>#{userIdent self}'s friends
 <ul
   $forall friend <- friends
-    <li
-      <a href=@{HomeR friend}>#{friend}
+    $with fid <- fst friend, f <- snd friend
+      <li
+        <a href=@{HomeR fid}>#{userIdent f}
