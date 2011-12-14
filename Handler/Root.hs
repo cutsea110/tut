@@ -29,3 +29,7 @@ getHomeR uid = do
   defaultLayout $ do
     setTitle "user home"
     $(widgetFile "userhome")
+
+postHomeR :: UserId -> Handler RepHtml
+postHomeR uid = do
+  redirect RedirectTemporary $ HomeR uid
