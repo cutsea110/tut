@@ -1,10 +1,12 @@
 {-# LANGUAGE TemplateHaskell, QuasiQuotes, TypeFamilies, GADTs #-}
 {-# LANGUAGE FlexibleContexts #-}
+{-# LANGUAGE OverloadedStrings #-}
 module Model where
 
 import Prelude
 import Yesod
 import Data.Text (Text)
+import Text.Blaze (ToHtml(toHtml))
 
 
 -- You can define all of your database entities in the entities file.
@@ -16,3 +18,6 @@ share [mkPersist sqlSettings, mkMigrate "migrateAll"] $(persistFile "config/mode
 data Sex = None | Male | Female
          deriving (Show, Read, Eq, Ord, Enum, Bounded)
 derivePersistField "Sex"
+
+instance ToHtml Sex where
+  toHtml = toHtml . show
