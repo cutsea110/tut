@@ -3,6 +3,7 @@
 module Handler.Root where
 
 import Import
+import Data.Text (unpack)
 
 -- This is a handler function for the GET request method on the RootR
 -- resource pattern. All of your resource patterns are defined in
@@ -32,4 +33,15 @@ getHomeR uid = do
 
 postHomeR :: UserId -> Handler RepHtml
 postHomeR uid = do
+  ms <- lookupPostParam "sex"
+  ma <- lookupPostParam "age"
+  mm <- lookupPostParam "memo"
+  let sex = maybe None (read.unpack) ms
+      age = maybe 0 (read.unpack) ma
+      memo = maybe "" id mm
+  runDB $ do
+    update uid [ UserSex =. sex
+               , UserAge =. age
+               , UserMemo =. memo
+               ]
   redirect RedirectTemporary $ HomeR uid
