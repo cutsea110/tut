@@ -1,6 +1,8 @@
 User
     ident Text
     password Text Maybe
+    age Int Maybe default=null
+    memo Text default=''
     UniqueUser ident
 Email
     email Text
