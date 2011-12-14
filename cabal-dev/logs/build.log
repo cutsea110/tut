@@ -1,0 +1,1208 @@
+
+package: RSA-1.0.6.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -oldbase usebinary includemd5 -test
+dependencies: SHA-1.5.0.0 base-4.3.1.0 binary-0.5.0.2
+              bytestring-0.9.1.10 pureMD5-2.1.0.3 random-1.0.0.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: SHA-1.5.0.0
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -exe -test
+dependencies: array-0.3.0.2 base-4.3.1.0 binary-0.5.0.2
+              bytestring-0.9.1.10
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: aeson-0.4.0.0
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -developer
+dependencies: attoparsec-0.10.0.3 base-4.3.1.0
+              blaze-builder-0.3.0.1 blaze-textual-0.2.0.5 bytestring-0.9.1.10
+              containers-0.4.0.0 deepseq-1.1.0.2 hashable-1.1.2.2 mtl-2.0.1.0
+              old-locale-1.0.0.2 syb-0.3 template-haskell-2.5.0.0 text-0.11.1.9
+              time-1.2.0.3 unordered-containers-0.1.4.3 vector-0.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: asn1-data-0.6.1.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -test
+dependencies: attoparsec-0.10.0.3 attoparsec-enumerator-0.3
+              base-4.3.1.0 bytestring-0.9.1.10 enumerator-0.4.16 mtl-2.0.1.0
+              text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: attempt-0.3.1.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 failure-0.1.0.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: attoparsec-0.10.0.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -developer
+dependencies: array-0.3.0.2 base-4.3.1.0 bytestring-0.9.1.10
+              containers-0.4.0.0 deepseq-1.1.0.2 text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: attoparsec-enumerator-0.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: attoparsec-0.10.0.3 base-4.3.1.0 bytestring-0.9.1.10
+              enumerator-0.4.16 text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: authenticate-0.10.3.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: RSA-1.0.6.2 SHA-1.5.0.0 aeson-0.4.0.0
+              attoparsec-0.10.0.3 base-4.3.1.0 base64-bytestring-0.1.0.3
+              blaze-builder-0.3.0.1 bytestring-0.9.1.10 case-insensitive-0.4
+              containers-0.4.0.0 enumerator-0.4.16 failure-0.1.0.1
+              http-enumerator-0.7.1.8 http-types-0.6.7 network-2.3.0.2
+              process-1.0.1.5 random-1.0.0.3 tagsoup-0.12.5 text-0.11.1.9
+              time-1.2.0.3 tls-0.8.3.2 transformers-0.2.2.0
+              unordered-containers-0.1.4.3 xml-enumerator-0.4.4
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: base-unicode-symbols-0.2.2.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -old-base
+dependencies: base-4.3.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: base64-bytestring-0.1.0.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 bytestring-0.9.1.10
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: binary-0.5.0.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: applicative-in-base split-base -bytestring-in-base
+dependencies: array-0.3.0.2 base-4.3.1.0 bytestring-0.9.1.10
+              containers-0.4.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: blaze-builder-0.3.0.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: blaze-builder-enumerator-0.2.0.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 blaze-builder-0.3.0.1
+              bytestring-0.9.1.10 enumerator-0.4.16 transformers-0.2.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: blaze-html-0.4.2.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 blaze-builder-0.3.0.1
+              bytestring-0.9.1.10 text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: blaze-textual-0.2.0.5
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: native -developer
+dependencies: base-4.3.1.0 blaze-builder-0.3.0.1
+              bytestring-0.9.1.10 ghc-prim-0.2.0.0 integer-gmp-0.2.0.3
+              old-locale-1.0.0.2 text-0.11.1.9 time-1.2.0.3 vector-0.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: case-insensitive-0.4
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 hashable-1.1.2.2
+              text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cereal-0.3.4.0
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: split-base
+dependencies: array-0.3.0.2 base-4.3.1.0 bytestring-0.9.1.10
+              containers-0.4.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: certificate-1.0.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -executable -test
+dependencies: asn1-data-0.6.1.1 base-4.3.1.0
+              base64-bytestring-0.1.0.3 bytestring-0.9.1.10
+              crypto-pubkey-types-0.1.0 directory-1.1.0.0 mtl-2.0.1.0
+              time-1.2.0.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: clientsession-0.7.3.6
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -test
+dependencies: base-4.3.1.0 base64-bytestring-0.1.0.3
+              bytestring-0.9.1.10 cereal-0.3.4.0 cprng-aes-0.2.3 crypto-api-0.8
+              cryptocipher-0.3.0 directory-1.1.0.0 entropy-0.2.1 skein-0.1.0.3
+              tagged-0.2.3.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cmdargs-0.9
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: quotation testprog
+dependencies: base-4.3.1.0 process-1.0.1.5 template-haskell-2.5.0.0
+              transformers-0.2.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: control-monad-attempt-0.3.0
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: attempt-0.3.1.1 base-4.3.1.0 transformers-0.2.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: convertible-text-0.4.0.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -nolib -buildtests
+dependencies: attempt-0.3.1.1 base-4.3.1.0 bytestring-0.9.1.10
+              containers-0.4.0.0 old-time-1.0.0.6 template-haskell-2.5.0.0
+              text-0.11.1.9 time-1.2.0.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cookie-0.3.0.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 blaze-builder-0.3.0.1
+              bytestring-0.9.1.10 old-locale-1.0.0.2 text-0.11.1.9 time-1.2.0.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cprng-aes-0.2.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 cereal-0.3.4.0
+              crypto-api-0.8 cryptocipher-0.3.0 entropy-0.2.1 random-1.0.0.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: crypto-api-0.8
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: array-0.3.0.2 base-4.3.1.0 bytestring-0.9.1.10
+              cereal-0.3.4.0 entropy-0.2.1 largeword-1.0.1 tagged-0.2.3.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: crypto-pubkey-types-0.1.0
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 crypto-api-0.8
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cryptocipher-0.3.0
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -benchmark -test
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 cereal-0.3.4.0
+              crypto-api-0.8 crypto-pubkey-types-0.1.0 ghc-prim-0.2.0.0
+              primitive-0.4.0.1 tagged-0.2.3.1 vector-0.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cryptohash-0.7.4
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: cryptoapi -test
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 cereal-0.3.4.0
+              crypto-api-0.8 tagged-0.2.3.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: css-text-0.1.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: attoparsec-0.10.0.3 base-4.3.1.0 text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: data-default-0.3.0
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 containers-0.4.0.0 dlist-0.5
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: data-object-0.3.1.8
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 failure-0.1.0.1
+              text-0.11.1.9 time-1.2.0.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: data-object-yaml-0.3.3.6
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -buildtests
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 containers-0.4.0.0
+              convertible-text-0.4.0.1 data-object-0.3.1.8 enumerator-0.4.16
+              failure-0.1.0.1 text-0.11.1.9 transformers-0.2.2.0 yaml-0.4.1.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: dataenc-0.14.0.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -buildtests
+dependencies: array-0.3.0.2 base-4.3.1.0 containers-0.4.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: dlist-0.5
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: applicative-in-base
+dependencies: base-4.3.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: email-validate-0.2.7
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 parsec-3.1.1 ranges-0.2.4
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: entropy-0.2.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 bytestring-0.9.1.10
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: enumerator-0.4.16
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 containers-0.4.0.0
+              text-0.11.1.9 transformers-0.2.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: failure-0.1.0.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: file-embed-0.0.4.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 directory-1.1.0.0
+              template-haskell-2.5.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: hamlet-0.10.5
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 blaze-builder-0.3.0.1 blaze-html-0.4.2.2
+              bytestring-0.9.1.10 containers-0.4.0.0 failure-0.1.0.1 parsec-3.1.1
+              process-1.0.1.5 shakespeare-0.10.2 template-haskell-2.5.0.0
+              text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: hashable-1.1.2.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 ghc-prim-0.2.0.0
+              text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: hjsmin-0.0.14
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -buildtests
+dependencies: base-4.3.1.0 blaze-builder-0.3.0.1
+              bytestring-0.9.1.10 containers-0.4.0.0 language-javascript-0.4.5
+              text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: http-date-0.0.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: array-0.3.0.2 attoparsec-0.10.0.3 base-4.3.1.0
+              bytestring-0.9.1.10
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: http-enumerator-0.7.1.8
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -network-bytestring -test
+dependencies: asn1-data-0.6.1.1 attoparsec-0.10.0.3
+              attoparsec-enumerator-0.3 base-4.3.1.0 base64-bytestring-0.1.0.3
+              blaze-builder-0.3.0.1 blaze-builder-enumerator-0.2.0.3
+              bytestring-0.9.1.10 case-insensitive-0.4 certificate-1.0.1
+              containers-0.4.0.0 cprng-aes-0.2.3 data-default-0.3.0
+              enumerator-0.4.16 failure-0.1.0.1 http-types-0.6.7
+              monad-control-0.3.0.1 network-2.3.0.2 tls-0.8.3.2 tls-extra-0.4.1
+              transformers-0.2.2.0 utf8-string-0.3.7 zlib-enum-0.2.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: http-types-0.6.7
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -test
+dependencies: array-0.3.0.2 base-4.3.1.0 blaze-builder-0.3.0.1
+              bytestring-0.9.1.10 case-insensitive-0.4 text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: language-javascript-0.4.5
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -buildtests
+dependencies: array-0.3.0.2 base-4.3.1.0 containers-0.4.0.0
+              mtl-2.0.1.0 utf8-light-0.4.0.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: largeword-1.0.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: mime-mail-0.4
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 blaze-builder-0.3.0.1
+              bytestring-0.9.1.10 dataenc-0.14.0.2 process-1.0.1.5 random-1.0.0.3
+              text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: monad-control-0.3.0.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 base-unicode-symbols-0.2.2.2
+              transformers-0.2.2.0 transformers-base-0.4.0.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: neither-0.3.0
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 failure-0.1.0.1 transformers-0.2.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: path-pieces-0.0.0
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: persistent-0.6.4.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 blaze-html-0.4.2.2 bytestring-0.9.1.10
+              containers-0.4.0.0 data-object-0.3.1.8 enumerator-0.4.16
+              monad-control-0.3.0.1 mtl-2.0.1.0 path-pieces-0.0.0 pool-0.1.2
+              text-0.11.1.9 time-1.2.0.3 transformers-0.2.2.0
+              transformers-base-0.4.0.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: persistent-sqlite-0.6.2.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -systemlib
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 containers-0.4.0.0
+              data-object-0.3.1.8 monad-control-0.3.0.1 neither-0.3.0
+              persistent-0.6.4.3 text-0.11.1.9 transformers-0.2.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: persistent-template-0.6.3.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 monad-control-0.3.0.1 persistent-0.6.4.3
+              template-haskell-2.5.0.0 text-0.11.1.9 transformers-0.2.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: pool-0.1.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 monad-control-0.3.0.1
+              transformers-0.2.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: primitive-0.4.0.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 ghc-prim-0.2.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: pureMD5-2.1.0.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -test
+dependencies: base-4.3.1.0 binary-0.5.0.2 bytestring-0.9.1.10
+              cereal-0.3.4.0 crypto-api-0.8 tagged-0.2.3.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: pwstore-fast-2.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 base64-bytestring-0.1.0.3
+              bytestring-0.9.1.10 cryptohash-0.7.4 random-1.0.0.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: ranges-0.2.4
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 containers-0.4.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: semigroups-0.8
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: derivedatatypeable
+dependencies: base-4.3.1.0 containers-0.4.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: shakespeare-0.10.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 parsec-3.1.1 template-haskell-2.5.0.0
+              text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: shakespeare-css-0.10.4
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 parsec-3.1.1 process-1.0.1.5
+              shakespeare-0.10.2 template-haskell-2.5.0.0 text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: shakespeare-js-0.10.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 process-1.0.1.5 shakespeare-0.10.2
+              template-haskell-2.5.0.0 text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: shakespeare-text-0.10.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 shakespeare-0.10.2
+              template-haskell-2.5.0.0 text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: simple-sendfile-0.1.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 network-2.3.0.2 unix-2.4.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: skein-0.1.0.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -reference
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 cereal-0.3.4.0
+              crypto-api-0.8 tagged-0.2.3.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: strict-concurrency-0.2.4.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 deepseq-1.1.0.2
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: tagged-0.2.3.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: derivedatatypeable
+dependencies: base-4.3.1.0 data-default-0.3.0 semigroups-0.8
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: tagsoup-0.12.5
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -download -testprog
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 containers-0.4.0.0
+              text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: text-0.11.1.9
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -developer
+dependencies: array-0.3.0.2 base-4.3.1.0 bytestring-0.9.1.10
+              deepseq-1.1.0.2 ghc-prim-0.2.0.0 integer-gmp-0.2.0.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: tls-0.8.3.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -executable -test
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 cereal-0.3.4.0
+              certificate-1.0.1 crypto-api-0.8 cryptocipher-0.3.0
+              cryptohash-0.7.4 mtl-2.0.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: tls-extra-0.4.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -executable -bench -test
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 certificate-1.0.1
+              crypto-api-0.8 cryptocipher-0.3.0 cryptohash-0.7.4 mtl-2.0.1.0
+              network-2.3.0.2 text-0.11.1.9 time-1.2.0.3 tls-0.8.3.2 vector-0.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: transformers-base-0.4.0.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 transformers-0.2.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: unix-compat-0.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 unix-2.4.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: unordered-containers-0.1.4.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 deepseq-1.1.0.2 hashable-1.1.2.2
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: utf8-light-0.4.0.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 ghc-prim-0.2.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: utf8-string-0.3.7
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -bytestring-in-base
+dependencies: base-4.3.1.0 bytestring-0.9.1.10
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: vector-0.9
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -internalchecks -unsafechecks boundschecks
+dependencies: base-4.3.1.0 primitive-0.4.0.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: wai-0.4.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 blaze-builder-0.3.0.1
+              bytestring-0.9.1.10 enumerator-0.4.16 http-types-0.6.7
+              network-2.3.0.2 text-0.11.1.9 transformers-0.2.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: wai-app-static-0.3.5.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -print
+dependencies: base-4.3.1.0 base64-bytestring-0.1.0.3
+              blaze-builder-0.3.0.1 blaze-html-0.4.2.2 bytestring-0.9.1.10
+              containers-0.4.0.0 cryptohash-0.7.4 directory-1.1.0.0
+              file-embed-0.0.4.1 http-date-0.0.1 http-types-0.6.7
+              old-locale-1.0.0.2 text-0.11.1.9 time-1.2.0.3 transformers-0.2.2.0
+              unix-compat-0.3 wai-0.4.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: wai-extra-0.4.5.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 blaze-builder-0.3.0.1
+              blaze-builder-enumerator-0.2.0.3 bytestring-0.9.1.10
+              case-insensitive-0.4 data-default-0.3.0 directory-1.1.0.0
+              enumerator-0.4.16 http-types-0.6.7 network-2.3.0.2
+              old-locale-1.0.0.2 text-0.11.1.9 time-1.2.0.3 transformers-0.2.2.0
+              wai-0.4.3 zlib-bindings-0.0.1 zlib-enum-0.2.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: warp-0.4.6.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -network-bytestring
+dependencies: base-4.3.1.0 blaze-builder-0.3.0.1
+              blaze-builder-enumerator-0.2.0.3 bytestring-0.9.1.10
+              case-insensitive-0.4 enumerator-0.4.16 http-types-0.6.7
+              network-2.3.0.2 simple-sendfile-0.1.3 transformers-0.2.2.0
+              unix-compat-0.3 wai-0.4.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: xml-enumerator-0.4.4
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -test
+dependencies: attoparsec-0.10.0.3 attoparsec-enumerator-0.3
+              base-4.3.1.0 blaze-builder-0.3.0.1 blaze-builder-enumerator-0.2.0.3
+              bytestring-0.9.1.10 containers-0.4.0.0 data-default-0.3.0
+              enumerator-0.4.16 failure-0.1.0.1 text-0.11.1.9
+              transformers-0.2.2.0 xml-types-0.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: xml-types-0.3
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 text-0.11.1.9
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: xss-sanitize-0.3.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: attoparsec-0.10.0.3 base-4.3.1.0 containers-0.4.0.0
+              css-text-0.1.1 network-2.3.0.2 tagsoup-0.12.5 text-0.11.1.9
+              utf8-string-0.3.7
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: yaml-0.4.1.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -buildtests -nolib -system-libyaml
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 enumerator-0.4.16
+              transformers-0.2.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: yesod-0.9.3.4
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: threaded ghc7
+dependencies: Cabal-1.10.1.0 attoparsec-0.10.0.3 base-4.3.1.0
+              blaze-builder-0.3.0.1 blaze-html-0.4.2.2 bytestring-0.9.1.10
+              containers-0.4.0.0 directory-1.1.0.0 filepath-1.2.0.0 hamlet-0.10.5
+              http-types-0.6.7 monad-control-0.3.0.1 parsec-3.1.1 process-1.0.1.5
+              shakespeare-css-0.10.4 shakespeare-js-0.10.3
+              shakespeare-text-0.10.3 template-haskell-2.5.0.0 text-0.11.1.9
+              time-1.2.0.3 transformers-0.2.2.0 unix-compat-0.3 wai-0.4.3
+              wai-extra-0.4.5.2 warp-0.4.6.2 yesod-auth-0.7.7 yesod-core-0.9.3.6
+              yesod-form-0.3.4 yesod-json-0.2.2.1 yesod-persistent-0.2.2
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: yesod-auth-0.7.7
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: ghc7
+dependencies: SHA-1.5.0.0 aeson-0.4.0.0 authenticate-0.10.3.1
+              base-4.3.1.0 blaze-html-0.4.2.2 bytestring-0.9.1.10
+              containers-0.4.0.0 control-monad-attempt-0.3.0 hamlet-0.10.5
+              http-enumerator-0.7.1.8 mime-mail-0.4 persistent-0.6.4.3
+              persistent-template-0.6.3.1 pureMD5-2.1.0.3 pwstore-fast-2.2
+              random-1.0.0.3 shakespeare-css-0.10.4 template-haskell-2.5.0.0
+              text-0.11.1.9 transformers-0.2.2.0 unordered-containers-0.1.4.3
+              wai-0.4.3 yesod-core-0.9.3.6 yesod-form-0.3.4 yesod-json-0.2.2.1
+              yesod-persistent-0.2.2
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: yesod-core-0.9.3.6
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: ghc7 -test
+dependencies: aeson-0.4.0.0 base-4.3.1.0 blaze-builder-0.3.0.1
+              blaze-html-0.4.2.2 bytestring-0.9.1.10 case-insensitive-0.4
+              cereal-0.3.4.0 clientsession-0.7.3.6 containers-0.4.0.0
+              cookie-0.3.0.2 data-object-0.3.1.8 data-object-yaml-0.3.3.6
+              directory-1.1.0.0 enumerator-0.4.16 failure-0.1.0.1 hamlet-0.10.5
+              http-types-0.6.7 monad-control-0.3.0.1 old-locale-1.0.0.2
+              parsec-3.1.1 path-pieces-0.0.0 random-1.0.0.3 shakespeare-0.10.2
+              shakespeare-css-0.10.4 shakespeare-js-0.10.3
+              strict-concurrency-0.2.4.1 template-haskell-2.5.0.0 text-0.11.1.9
+              time-1.2.0.3 transformers-0.2.2.0 transformers-base-0.4.0.1
+              vector-0.9 wai-0.4.3 wai-extra-0.4.5.2
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: yesod-default-0.4.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 cmdargs-0.9
+              directory-1.1.0.0 shakespeare-css-0.10.4 shakespeare-js-0.10.3
+              template-haskell-2.5.0.0 text-0.11.1.9 transformers-0.2.2.0
+              unix-2.4.2.0 wai-0.4.3 wai-extra-0.4.5.2 warp-0.4.6.2
+              yesod-core-0.9.3.6
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: yesod-form-0.3.4
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 blaze-builder-0.3.0.1 blaze-html-0.4.2.2
+              bytestring-0.9.1.10 containers-0.4.0.0 data-default-0.3.0
+              email-validate-0.2.7 hamlet-0.10.5 network-2.3.0.2
+              persistent-0.6.4.3 shakespeare-css-0.10.4 shakespeare-js-0.10.3
+              template-haskell-2.5.0.0 text-0.11.1.9 time-1.2.0.3
+              transformers-0.2.2.0 wai-0.4.3 xss-sanitize-0.3.1
+              yesod-core-0.9.3.6 yesod-persistent-0.2.2
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: yesod-json-0.2.2.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: aeson-0.4.0.0 base-4.3.1.0 containers-0.4.0.0
+              shakespeare-js-0.10.3 text-0.11.1.9 unordered-containers-0.1.4.3
+              vector-0.9 yesod-core-0.9.3.6
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: yesod-persistent-0.2.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags:
+dependencies: base-4.3.1.0 failure-0.1.0.1 persistent-0.6.4.3
+              persistent-template-0.6.3.1 transformers-0.2.2.0 yesod-core-0.9.3.6
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: yesod-static-0.3.2
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -test
+dependencies: base-4.3.1.0 base64-bytestring-0.1.0.3
+              bytestring-0.9.1.10 cereal-0.3.4.0 containers-0.4.0.0
+              directory-1.1.0.0 enumerator-0.4.16 file-embed-0.0.4.1
+              http-types-0.6.7 old-time-1.0.0.6 pureMD5-2.1.0.3
+              template-haskell-2.5.0.0 text-0.11.1.9 transformers-0.2.2.0
+              unix-compat-0.3 wai-0.4.3 wai-app-static-0.3.5.1 yesod-core-0.9.3.6
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: zlib-bindings-0.0.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -test
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 zlib-0.5.3.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: zlib-enum-0.2.1
+os: linux
+arch: x86_64
+compiler: ghc-7.0.3
+client: cabal-install-0.10.2
+flags: -test
+dependencies: base-4.3.1.0 bytestring-0.9.1.10 enumerator-0.4.16
+              transformers-0.2.2.0 zlib-bindings-0.0.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
