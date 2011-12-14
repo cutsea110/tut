@@ -141,7 +141,7 @@ instance YesodAuth Tut where
         case x of
             Just (uid, _) -> return $ Just uid
             Nothing -> do
-                fmap Just $ insert $ User (credsIdent creds) Nothing
+                fmap Just $ insert $ User (credsIdent creds) Nothing None 0 ""
 
     -- You can add other plugins like BrowserID, email or OAuth here
     authPlugins = [authOpenId]
