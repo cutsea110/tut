@@ -18,9 +18,12 @@ getRootR = do
         setTitle "tut homepage"
         $(widgetFile "homepage")
 
-getHomeR :: Text -> Handler RepHtml
-getHomeR name = do
-  friends <- runDB $ selectList [] [Asc UserIdent]
+getHomeR :: UserId -> Handler RepHtml
+getHomeR uid = do
+  (self, friends) <- runDB $ do
+    me <- get404 uid
+    fs <- selectList [] [Asc UserIdent]
+    return (me, fs)
   defaultLayout $ do
     setTitle "user home"
     $(widgetFile "userhome")
