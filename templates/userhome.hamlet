@@ -1,0 +1,6 @@
+<h1>Welcome to #{name}'s home page
+<h3>#{name}'s friends
+<ul
+  $forall friend <- friends
+    <li
+      <a href=@{HomeR friend}>#{friend}
