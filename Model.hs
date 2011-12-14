@@ -12,3 +12,7 @@ import Data.Text (Text)
 -- at:
 -- http://www.yesodweb.com/book/persistent/
 share [mkPersist sqlSettings, mkMigrate "migrateAll"] $(persistFile "config/models")
+
+data Sex = None | Male | Female
+         deriving (Show, Read, Eq, Ord, Enum, Bounded)
+derivePersistField "Sex"
