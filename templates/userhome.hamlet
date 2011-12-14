@@ -6,7 +6,7 @@
     <dd>
       <select name=sex
         $forall sex <- sexs
-          <option value=#{sex} :sexIs sex:selected>#{sex}
+          <option value=#{toInt sex} :sexIs sex:selected>#{sex}
     <dt>Age
     <dd>
       <input.numberbox type=number name=age value=#{userAge self}
