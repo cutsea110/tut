@@ -20,7 +20,7 @@ getRootR = do
 
 getHomeR :: Text -> Handler RepHtml
 getHomeR name = do
-  friends <- runDB $ selectList [] []
+  friends <- runDB $ selectList [] [Asc UserIdent]
   defaultLayout $ do
     setTitle "user home"
     $(widgetFile "userhome")
