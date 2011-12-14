@@ -33,6 +33,14 @@ getHomeR uid = do
 
 postHomeR :: UserId -> Handler RepHtml
 postHomeR uid = do
+  ((r, _), _) <- runFormPost $ renderDivs $ profAForm Nothing
+  case r of
+    FormSuccess p -> runDB $ do
+      update uid [ UserSex =. profSex p
+                 , UserAge =. profAge p
+                 , UserMemo =. maybe "" unTextarea (profMemo p)
+                 ]
+    _ -> invalidArgs ["error occurred."]
   redirect RedirectTemporary $ HomeR uid
 
 data Prof = Prof
