@@ -1,0 +1,10 @@
+<dl
+  <dt>Sex
+  <dd>
+    ^{fvInput sexView}
+  <dt>Age
+  <dd>
+    ^{fvInput ageView}
+  <dt>Memo
+  <dd>
+    ^{fvInput memoView}

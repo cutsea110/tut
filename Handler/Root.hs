@@ -41,3 +41,14 @@ data Prof = Prof
             , profMemo :: Maybe Textarea
             }
           deriving Show
+
+profForm :: Maybe Prof -> Html -> MForm Tut Tut (FormResult Prof, Widget)
+profForm mp  _ = do
+  (sexRes, sexView) <- mreq (selectField sexs) "sex" (profSex <$> mp)
+  (ageRes, ageView) <- mreq intField "age" (profAge <$> mp)
+  (memoRes, memoView) <- mopt textareaField "memo" (profMemo <$> mp)
+  let profRes = Prof <$> sexRes <*> ageRes <*> memoRes
+  let widget = $(widgetFile "prof")
+  return (profRes, widget)
+  where
+    sexs = [(pack $ show s, s) | s <- [minBound..maxBound]]
