@@ -3,6 +3,7 @@
 module Handler.Root where
 
 import Import
+import Data.Text (pack)
 
 -- This is a handler function for the GET request method on the RootR
 -- resource pattern. All of your resource patterns are defined in
@@ -33,3 +34,10 @@ getHomeR uid = do
 postHomeR :: UserId -> Handler RepHtml
 postHomeR uid = do
   redirect RedirectTemporary $ HomeR uid
+
+data Prof = Prof
+            { profSex :: Sex
+            , profAge :: Int
+            , profMemo :: Maybe Textarea
+            }
+          deriving Show
