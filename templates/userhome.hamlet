@@ -1,4 +1,19 @@
 <h1>Welcome to #{userIdent self}'s home page
+<h3>#{userIdent self}'s profile
+<dl
+  <dt>Age
+  $maybe age <- userAge self
+    <dd>#{age}
+  $nothing
+    <dd>?
+  <dt>Sex
+  $maybe sex <- userSex self
+    <dd>#{show sex}
+  $nothing
+    <dd>?
+  <dt>Memo
+  <dd>#{userMemo self}
+
 <h3>#{userIdent self}'s friends
 <ul
   $forall friend <- friends
