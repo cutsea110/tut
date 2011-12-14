@@ -17,3 +17,9 @@ getRootR = do
         h2id <- lift newIdent
         setTitle "tut homepage"
         $(widgetFile "homepage")
+
+getHomeR :: Text -> Handler RepHtml
+getHomeR name = do
+  defaultLayout $ do
+    setTitle "user home"
+    $(widgetFile "userhome")
