@@ -1,12 +1,19 @@
 <h1>Welcome to #{userIdent self}'s home page
 <h3>#{userIdent self}'s profile
-<dl
-  <dt>Sex
-  <dd>#{userSex self}
-  <dt>Age
-  <dd>#{userAge self}
-  <dt>Memo
-  <dd>#{userMemo self}
+<form method=post action=@{HomeR uid}
+  <dl
+    <dt>Sex
+    <dd>
+      <select name=sex
+        $forall sex <- sexs
+          <option value=#{sex} :sexIs sex:selected>#{sex}
+    <dt>Age
+    <dd>
+      <input.numberbox type=number name=age value=#{userAge self}
+    <dt>Memo
+    <dd>
+      <textarea.memo name=memo>#{userMemo self}
+  <input type=submit
 
 <h3>#{userIdent self}'s friends
 <ul
