@@ -25,15 +25,8 @@ getHomeR uid = do
     me <- get404 uid
     fs <- selectList [] [Asc UserIdent]
     return (me, fs)
-  ((_, w), e) <- runFormGet $ profForm $ 
+  ((r, w), e) <- runFormGet $ profForm $ 
                  Just $ Prof (userSex self) (userAge self) (Just (Textarea (userMemo self)))
-  defaultLayout $ do
-    setTitle "user home"
-    $(widgetFile "userhome")
-
-postHomeR :: UserId -> Handler RepHtml
-postHomeR uid = do
-  ((r, _), _) <- runFormPost $ profForm Nothing
   case r of
     FormSuccess p -> runDB $ do
       update uid [ UserSex =. profSex p
@@ -41,8 +34,10 @@ postHomeR uid = do
                  , UserMemo =. maybe "" unTextarea (profMemo p)
                  ]
     FormFailure ms -> invalidArgs ms
-    FormMissing -> invalidArgs ["form missing error occurred."]
-  redirect RedirectTemporary $ HomeR uid
+    FormMissing -> return ()
+  defaultLayout $ do
+    setTitle "user home"
+    $(widgetFile "userhome")
 
 data Prof = Prof
             { profSex :: Sex
@@ -52,12 +47,12 @@ data Prof = Prof
           deriving Show
 
 profForm :: Maybe Prof -> Html -> MForm Tut Tut (FormResult Prof, Widget)
-profForm mp  _ = do
+profForm mp extra = do
   (sexRes, sexView) <- mreq (selectField sexs) "sex" (profSex <$> mp)
   (ageRes, ageView) <- mreq intField "age" (profAge <$> mp)
   (memoRes, memoView) <- mopt textareaField "memo" (profMemo <$> mp)
   let profRes = Prof <$> sexRes <*> ageRes <*> memoRes
-  let widget = $(widgetFile "prof")
+  let widget = toWidget $(widgetFile "prof")
   return (profRes, widget)
   where
     sexs = [(pack $ show s, s) | s <- [minBound..maxBound]]
