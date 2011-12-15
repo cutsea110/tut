@@ -25,13 +25,23 @@ getHomeR uid = do
     me <- get404 uid
     fs <- selectList [] [Asc UserIdent]
     return (me, fs)
-  ((_, w), e) <- runFormGet $ profForm $ Just $ Prof (userSex self) (userAge self) (Just (Textarea (userMemo self)))
+  ((_, w), e) <- runFormGet $ profForm $ 
+                 Just $ Prof (userSex self) (userAge self) (Just (Textarea (userMemo self)))
   defaultLayout $ do
     setTitle "user home"
     $(widgetFile "userhome")
 
 postHomeR :: UserId -> Handler RepHtml
 postHomeR uid = do
+  ((r, _), _) <- runFormPost $ profForm Nothing
+  case r of
+    FormSuccess p -> runDB $ do
+      update uid [ UserSex =. profSex p
+                 , UserAge =. profAge p
+                 , UserMemo =. maybe "" unTextarea (profMemo p)
+                 ]
+    FormFailure ms -> invalidArgs ms
+    FormMissing -> invalidArgs ["form missing error occurred."]
   redirect RedirectTemporary $ HomeR uid
 
 data Prof = Prof
